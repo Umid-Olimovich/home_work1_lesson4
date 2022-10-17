@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #202c36;
+  color: #ffffff;
+  font-family: sans-serif;
+  
+}
+h3{
+    font-weight: 500;
+}
+b{
+    margin-left: 20px;
+    margin-right: 15px;
+}
+p{
+    margin-top: 8px;
+}
+.navbar {
+  max-width: 100%;
+  height: 80px;
+  background: #2b3844;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0562443);
+}
+.navbar_div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+form {
+  background: #2b3844;
+  width: 300px;
+  height: 44px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+input {
+  all: unset;
+  font: 16px system-ui;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+::placeholder {
+  color: #fff;
+  opacity: 0.7;
+}
+
+svg {
+  color: #fff;
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+}
+.countries_sort_panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.select_region {
+  outline: none;
+  border: 1px solid #2b3844;
+  background: #2b3844;
+  width: 200px;
+  height: 44px;
+  border-radius: 5px;
+  border: solid none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+}
+.countries_list {
+  display: grid;
+  list-style: none;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 30px;
+}
+.list_items {
+  height: 336px;
+  width: 264px;
+  border-radius: 5px;
+  background: #2b3844;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+  margin-bottom: 72px;
+  border-radius: 5px;
+}
+.items_img {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 12px;
+
+}
+.items_name {
+    height: 26px;
+    width: 240px;
+    font-size: 25px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    margin-left: 20px;
+}
+.items_population {
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 100;
+    font-size: normal;
+}

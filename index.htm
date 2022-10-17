@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar_div">
+        <h2>Where in the world?</h2>
+        <div style="display: flex">
+          <svg
+            width="16"
+            height="15"
+            viewBox="0 0 16 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M11.5532 10.815C7.66857 10.815 4.51929 7.92783 4.51929 4.36821C4.51929 3.0253 4.96679 1.78158 5.73143 0.75C2.69036 1.69515 0.5 4.33122 0.5 7.43807C0.5 11.3385 3.94929 14.5 8.20357 14.5C11.5929 14.5 14.4696 12.4932 15.5 9.70452C14.375 10.4048 13.0161 10.815 11.5532 10.815Z"
+              fill="white"
+            />
+          </svg>
+          <p style="padding-right: 30px">Dark Mode</p>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="countries_sort_panel">
+        <form role="search" id="form">
+          <input type="text" placeholder="Search..." onblur="getVal()"/>
+          <button onclick="getInputValue()">
+            <svg viewBox="0 0 1024 1024">
+              <path
+                class="path1"
+                d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"
+              ></path>
+            </svg>
+          </button>
+        </form>
+        <select class="select_region"  id="countries" onchange> 
+            <option  value="all">Filter by Region</option>
+            <option  value="Africa">Africa</option>
+            <option  value="Americas">America</option>
+            <option  value="Asia">Asia</option>
+            <option  value="Europe">Europe</option>
+            <option  value="Oceania">Oceania</option>
+        </select>
+      </div>
+
+      <ul class="countries_list">
+
+      </ul>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
